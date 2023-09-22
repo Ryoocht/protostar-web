@@ -10,6 +10,12 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {
       fontFamily: {
         black_ops_one: ['var(--font-black-ops-one)'],
@@ -50,28 +56,24 @@ module.exports = {
   plugins: [
     nextui({
       layout: {
-        disabledOpacity: '0.3',
         radius: {
-          small: '2px',
-          medium: '4px',
-          large: '6px',
+          sm: '3px',
+          md: '5px',
+          lg: '10px',
+          xl: '30px',
         },
         borderWidth: {
-          small: '1px',
-          medium: '1px',
-          large: '2px',
+          sm: '1px',
+          md: '2px',
+          lg: '3px',
         },
       },
       themes: {
         light: {
-          colors: {
-            background: 'yellow',
-          },
+          colors: {},
         },
         dark: {
-          colors: {
-            background: 'orange',
-          },
+          colors: {},
         },
       },
     }),

@@ -7,7 +7,9 @@ export default function Home() {
         <ThemeSwitcher />
       </header>
       <main>
-        <p className='dark bg-background'>Text Colour</p>
+        <p className='dark:text-yellow-light text-orange-light'>
+          Text Colour
+        </p>
       </main>
       <footer></footer>
     </div>
