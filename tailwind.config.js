@@ -11,7 +11,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      sm: '640px',
+      sm: '480px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',
@@ -70,10 +70,14 @@ module.exports = {
       },
       themes: {
         light: {
-          colors: {},
+          colors: {
+            background: '#F5F9FF',
+          },
         },
         dark: {
-          colors: {},
+          colors: {
+            background: '#0f172a',
+          },
         },
       },
     }),
