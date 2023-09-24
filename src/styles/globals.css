@@ -6,44 +6,51 @@ html {
   background-color: #0f172a;
 }
 
-.protostar_dark_background {
-  background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
-    0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(
-      30% 25% at 40% 20%,
-      #00738317 0%,
-      #00000000 100%
-    ),
-    radial-gradient(30% 25% at 35% 30%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 30% 35%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 25% 40%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 20% 45%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 15% 50%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 10% 55%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 5% 60%, #00738317 0%, #00000000 100%),
-    radial-gradient(100% 50% at 90% 5%, #282c5df7 2%, #073aff00 61%),
-    radial-gradient(100% 50% at 10% 5%, #0d2357 0%, #073aff00 61%),
-    radial-gradient(75% 75% at 50% 50%, #0f172a 100%, #0f172aff 100%);
-}
+@layer components {
+  .protostar_dark_background {
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+      0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(
+        30% 25% at 40% 20%,
+        #00738317 0%,
+        #00000000 100%
+      ),
+      radial-gradient(30% 25% at 35% 30%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 30% 35%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 25% 40%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 20% 45%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 15% 50%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 10% 55%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 5% 60%, #00738317 0%, #00000000 100%),
+      radial-gradient(100% 50% at 90% 5%, #282c5df7 2%, #073aff00 61%),
+      radial-gradient(100% 50% at 10% 5%, #0d2357 0%, #073aff00 61%),
+      radial-gradient(75% 75% at 50% 50%, #0f172a 100%, #0f172aff 100%);
+  }
 
-.protostar_light_background {
-  background-size: 100% 100%;
-  background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
-    0px 0px, 0px 0px, 0px 0px;
-  background-image: radial-gradient(
-      30% 25% at 40% 20%,
-      #00738317 0%,
-      #00000000 100%
-    ),
-    radial-gradient(30% 25% at 35% 30%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 30% 35%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 25% 40%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 20% 45%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 15% 50%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 10% 55%, #00738317 0%, #00000000 100%),
-    radial-gradient(30% 25% at 5% 60%, #00738317 0%, #00000000 100%),
-    radial-gradient(100% 50% at 90% 5%, #282c5df7 2%, #073aff00 61%),
-    radial-gradient(100% 50% at 10% 5%, #0d2357 0%, #073aff00 61%),
-    radial-gradient(75% 75% at 50% 50%, #f5f9ffff 98%, #073affff 100%);
+  .protostar_light_background {
+    background-size: 100% 100%;
+    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px,
+      0px 0px, 0px 0px, 0px 0px;
+    background-image: radial-gradient(
+        30% 25% at 40% 20%,
+        #00738317 0%,
+        #00000000 100%
+      ),
+      radial-gradient(30% 25% at 35% 30%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 30% 35%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 25% 40%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 20% 45%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 15% 50%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 10% 55%, #00738317 0%, #00000000 100%),
+      radial-gradient(30% 25% at 5% 60%, #00738317 0%, #00000000 100%),
+      radial-gradient(20% 20% at 65% 35%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(20% 20% at 60% 30%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(20% 20% at 45% 40%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(20% 20% at 40% 45%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(20% 20% at 35% 50%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(20% 20% at 30% 55%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(20% 20% at 25% 60%, #f5eefb 0%, #00000000 100%),
+      radial-gradient(75% 75% at 50% 50%, #f5f9ffff 98%, #073affff 100%);
+  }
 }

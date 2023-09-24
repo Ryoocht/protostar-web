@@ -72,11 +72,17 @@ module.exports = {
         light: {
           colors: {
             background: '#F5F9FF',
+            text: {
+              primary: '#7dd3fc',
+            },
           },
         },
         dark: {
           colors: {
             background: '#0f172a',
+            text: {
+              primary: '#7dd3fc',
+            },
           },
         },
       },
