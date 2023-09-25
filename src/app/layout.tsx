@@ -1,15 +1,15 @@
 import '../styles/globals.css'
-import { Black_Ops_One, Orbit, Exo } from 'next/font/google'
+import { Oxanium, Orbit, Exo } from 'next/font/google'
 
 import dynamic from 'next/dynamic'
+import Script from 'next/script'
 const ThemeProvider = dynamic(() => import('@/providers/theme-provider'), {
   ssr: false,
 })
 
-const black_ops_one = Black_Ops_One({
+const oxanium = Oxanium({
   subsets: ['latin'],
-  weight: '400',
-  variable: '--font-black-ops-one',
+  variable: '--font-oxanium',
 })
 
 const orbit = Orbit({
@@ -37,13 +37,21 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={`
-          ${black_ops_one.variable} 
+          ${oxanium.variable} 
           ${orbit.variable} 
           ${exo.variable} 
           font-sans
         `}
       >
         <ThemeProvider>{children}</ThemeProvider>
+        <Script
+          type='module'
+          src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'
+        ></Script>
+        <Script
+          noModule
+          src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'
+        ></Script>
       </body>
     </html>
   )

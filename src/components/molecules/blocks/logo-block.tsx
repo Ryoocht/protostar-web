@@ -6,20 +6,21 @@ import { ProtostarLogo } from '@/assets/images'
 import { useScreenSize } from '@/hooks/index'
 
 const LogoBlock = () => {
-  const lg = useScreenSize('lg')
+  const sm = useScreenSize('sm')
+
   return (
     <div className='flex items-center w-fit'>
       <Image
         src={ProtostarLogo}
-        width={50}
-        height={50}
+        width={40}
+        height={40}
         alt='Protostar'
         placeholder='blur'
-        className=''
+        className='w-auto h-auto'
       />
-      {lg && (
-        <p className='font-black_ops_one text-3xl text-BLUE-midnight dark:text-GRAY-powder '>
-          PROTOSTAR
+      {sm && (
+        <p className='font-oxanium text-3xl font-semibold text-BLUE-midnight dark:text-WHITE-monotone ml-2'>
+          Protostar
         </p>
       )}
     </div>

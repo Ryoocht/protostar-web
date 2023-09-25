@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        black_ops_one: ['var(--font-black-ops-one)'],
+        oxanium: ['var(--font-oxanium)'],
         orbit: ['var(--font-orbit)'],
         exo: ['var(--font-exo)'],
       },
@@ -34,8 +34,9 @@ module.exports = {
         },
         GRAY: {
           slate: '#64748b',
-          powder: '94a3b8',
+          powder: '#94a3b8',
           light: '#f3f3f3',
+          bright: '#38bdf8',
         },
         ORANGE: {
           vermilion: '#ec3c0b',
@@ -71,7 +72,7 @@ module.exports = {
       themes: {
         light: {
           colors: {
-            background: '#F5F9FF',
+            background: '#F3FAFF',
             text: {
               primary: '#7dd3fc',
             },
@@ -79,7 +80,7 @@ module.exports = {
         },
         dark: {
           colors: {
-            background: '#0f172a',
+            background: '#111827',
             text: {
               primary: '#7dd3fc',
             },

@@ -16,6 +16,8 @@ const ThemeSwitcher = () => {
 
   if (!mounted) return null
 
+  /* TODO: start from here, create a dark mode switch
+   https://www.youtube.com/watch?v=l8aC7BsKhTI */
   return (
     <Switch
       defaultSelected
@@ -25,7 +27,7 @@ const ThemeSwitcher = () => {
         isSelected ? (
           <SunIcon className={className} />
         ) : (
-          <MoonIcon className={className} />
+          <MoonIcon className={className} fill={'#94a3b8'} />
         )
       }
       onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
