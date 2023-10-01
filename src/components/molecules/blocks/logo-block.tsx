@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { ProtostarLogo } from '@/assets/images'
+import { ProtostarDarkLogo, ProtostarLightLogo } from '@/assets/images'
 import { useScreenSize } from '@/hooks/index'
 
 const LogoBlock = () => {
@@ -11,7 +11,7 @@ const LogoBlock = () => {
   return (
     <div className='flex items-center w-fit'>
       <Image
-        src={ProtostarLogo}
+        src={ProtostarDarkLogo}
         width={40}
         height={40}
         alt='Protostar'
