@@ -4,6 +4,29 @@
 
 html {
   background-color: #0f172a;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 @layer components {
